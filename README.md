@@ -2,11 +2,6 @@
     <img src="https://jasonccj-1258779086.cos.ap-beijing.myqcloud.com/img/GitHub/vue-webpack-todo/vue%2Bwebpack.png" width="500px" />
 </div>
 
-# 项目搭建文档(每步代码配置带有详细注释)
-线上展示:http://118.24.232.149:8081/    
-项目地址:https://github.com/Jasonccj/vue-webpack-todo   
-博客地址:https://juejin.im/post/5c26e938e51d455e860dae5a      
-慕课地址:https://www.imooc.com/learn/935   
 
 ## 1.vue+webpack项目工程配置
 
@@ -70,20 +65,6 @@ npm i extract-text-webpack-plugin@3.0.2
 ## 打包类库代码及hash优化
 
 
-
-# 配置部分截图展示(仅用于展示,每步代码配置带有详细注释)
-<div align="center  ">
-    <img src="https://jasonccj-1258779086.cos.ap-beijing.myqcloud.com/img/GitHub/vue-webpack-todo/xiangxi.png" width="500px" />
-</div>
-
 # 小计
 - [XIAOJI.md 用于记录一些笔记](https://github.com/Jasonccj/vue-webpack-todo/blob/master/XIAOJI.md)
 
-# 最后
-- 喜欢的记得点个star.鼓励一下,谢谢!
-- 微信 cuixianseni
-- qq群号 424072183
-
-<div align="left">
-    <img src="https://jasonccj-1258779086.cos.ap-beijing.myqcloud.com/img/GitHub/vue-webpack-todo/fenxiang.png" width="200px" />
-</div>
