@@ -1,14 +1,14 @@
-//path是Nodejs中的基本包,用来处理路径
+// path是Nodejs中的基本包,用来处理路径
 const path = require('path');
-//引入html-webpack-plugin
+// 引入html-webpack-plugin
 const HTMLPlugin = require('html-webpack-plugin');
-//引入webpack
+// 引入webpack
 const webpack = require("webpack");
 // 帮助我们很好得合并webpack配置
 const merge = require('webpack-merge');
 const ExtractPlugin = require("extract-text-webpack-plugin");
 const baseConfig = require('./webpack.config.base');
-//判断是否为测试环境,在启动脚本时设置的环境变量都是存在于process.env这个对象里面的
+// 判断是否为测试环境,在启动脚本时设置的环境变量都是存在于process.env这个对象里面的
 const isDev = process.env.NODE_ENV === "development";
 const defaultPlugin = [
     // 主要作用是在此处可以根据isdev配置process.env,一是可以在js代码中可以获取到process.env,
@@ -18,7 +18,7 @@ const defaultPlugin = [
             NODE_ENV: isDev ? '"development"' : '"production"'
         }
     }),
-    //引入HTMLPlugin
+    // 引入HTMLPlugin
     new HTMLPlugin()
 ];
 const devServer = {

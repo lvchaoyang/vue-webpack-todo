@@ -4,6 +4,11 @@
     </header>
 </template>
 
+<script>
+    export default {
+      name: 'header'
+    }
+</script>
 <style lang="stylus" scoped>
     .main-header
         text-align center

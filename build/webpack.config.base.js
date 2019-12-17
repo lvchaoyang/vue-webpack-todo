@@ -14,6 +14,12 @@ const config = {
         // 所以针对不同类型的文件,我们定义不同的识别规则,最终目的都是打包成js文件
         rules:[
             {
+                test: /\.(vue|js|jsx)$/,
+                loader: "eslint-loader", // 代码检测
+                exclude: /node_modules/,
+                enforce: "pre" // 预处理
+            },
+            {
                 test: /\.vue$/,
                 loader: 'vue-loader', // 处理.vue文件
                 options: createVueLoaderOptions(isDev)

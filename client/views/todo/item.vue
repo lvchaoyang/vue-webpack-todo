@@ -1,29 +1,26 @@
 <template>
     <div :class="['views-item',todo.completed ? 'completed': '']">
-        <input 
-            type="checkbox"
-            class="toggle"
-            v-model="todo.completed"
-        >
+        <input type="checkbox" class="toggle" v-model="todo.completed" >
         <label>{{todo.content}}</label>
         <button class="destory" @click="deleteTodo"></button>
     </div>
 </template>
 
 <script>
-export default {
-    props: {
+    export default {
+      name: 'item',
+      props: {
         todo: {
-            type: Object,
-            required: true
+          type: Object,
+          required: true
         }
-    },
-    methods: {
-        deleteTodo(){
-            this.$emit('del',this.todo.id)
+      },
+      methods: {
+        deleteTodo () {
+          this.$emit('del', this.todo.id)
         }
+      }
     }
-}
 </script>
 
 <style lang="stylus" scoped>
@@ -31,10 +28,12 @@ export default {
         position relative
         background-color #fff
         font-size 24px
-        border-bottom 1px solid rgba(0,0,0,0.06)
+        border-bottom 1px solid rgba(0, 0, 0, 0.06)
+
         &:hover
             .destory:after
-                content 'x'            
+                content 'x'
+
         label
             white-space pre-line
             word-break break-all
@@ -43,10 +42,12 @@ export default {
             display block
             line-height 1.2
             transition color 0.4s
+
         &.completed
             label
                 color #d9d9d9
                 text-decoration line-through
+
     .toggle
         text-align center
         width 50px
@@ -58,11 +59,13 @@ export default {
         border none
         appearance none
         outline none
+
         &:after
             content url('../../assets/images/unChecked.svg')
 
         &:checked:after
             content url('../../assets/images/checked.svg')
+
     .destory
         position absolute
         top 0
@@ -79,5 +82,5 @@ export default {
         appearance none
         border-width 0
         cursor pointer
-        outline none   
+        outline none
 </style>
