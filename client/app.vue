@@ -1,24 +1,20 @@
 <template>
     <div id="app">
         <div id="cover"></div>
-        <Header></Header>
+        <defaultHead></defaultHead>
         <Todo></Todo>
-        <Footer></Footer>
+        <defaultFoot></defaultFoot>
     </div>
 </template>
 
 <script>
-import Header from './layout/header.vue'
-import Footer from './layout/footer.jsx'
+import defaultHead from './layout/defaultHead.vue'
+import defaultFoot from './layout/defaultFoot.jsx'
 import Todo from './views/todo/todo.vue'
 
 export default {
   name: 'app',
-  components: {
-    Header,
-    Footer,
-    Todo
-  }
+  components: { defaultHead, defaultFoot, Todo }
 }
 </script>
 
@@ -34,9 +30,9 @@ export default {
         left 0
         right 0
         top 0
-        bottom 0   
-        background-color #999 
-        opacity 0.2
+        bottom 0
+        background-color #999
+        opacity 0.3
         z-index -1
 
 </style>

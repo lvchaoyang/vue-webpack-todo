@@ -6,7 +6,7 @@
 
 <script>
     export default {
-      name: 'head'
+      name: 'defaultHead'
     }
 </script>
 <style lang="stylus" scoped>
