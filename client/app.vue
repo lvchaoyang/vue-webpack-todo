@@ -2,7 +2,9 @@
     <div id="app">
         <div id="cover"></div>
         <defaultHead></defaultHead>
-        <Todo></Todo>
+        <router-link to="/app">App</router-link>
+        <router-link to="/login">Login</router-link>
+        <router-view />
         <defaultFoot></defaultFoot>
     </div>
 </template>
@@ -10,11 +12,10 @@
 <script>
 import defaultHead from './layout/defaultHead.vue'
 import defaultFoot from './layout/defaultFoot.jsx'
-import Todo from './views/todo/todo.vue'
 
 export default {
   name: 'app',
-  components: { defaultHead, defaultFoot, Todo }
+  components: { defaultHead, defaultFoot }
 }
 </script>
 
