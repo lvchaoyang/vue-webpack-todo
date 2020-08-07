@@ -6,7 +6,7 @@
 
 <script>
     export default {
-      name: 'header'
+      name: 'head'
     }
 </script>
 <style lang="stylus" scoped>

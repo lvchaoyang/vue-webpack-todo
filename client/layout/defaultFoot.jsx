@@ -1,7 +1,7 @@
 import '../assets/styles/footer.styl'
 
 export default {
-  name: 'footer',
+  name: 'foot',
   data () {
     return {
       author: 'Young'
